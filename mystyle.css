@@ -1,24 +1,31 @@
-body{
-    background-color: #fedcba;
-    }
-.antr{
-    font:'Times New Roman';
-    text-align:center;
+.pp{
+    font-family:Arial;
+    font-size:36px;
+    text-align:left;
+    background-color:black;
+    color:white;
+    height:48px;
 }
-.lent{
-    width:50%;
-    text-align:center;
-    font-size:larger;
-    margin:auto;
-    margin-top:150px;
-    margin-bottom:150px;
-            
+.pa{
+    float:right;
 }
-#vard{
-    font:'Times New Roman';
-    font-size:large;
-    text-align:right;
+a:link{
+    text-decoration: none;
+    color: red;
 }
-table, td{
-    border:solid black;
+a:visited{
+    color: red;
+}
+.ap{
+    font-family:Arial;
+    font-size:24px;
+    height: 188px;
+    border:2px solid red;
+}
+.aa{
+    font-family:Arial;
+    font-size:12px;
+}
+.img{
+    float: left;
 }
