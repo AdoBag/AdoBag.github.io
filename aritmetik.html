@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <button onclick=skaicius()>Pradeti</button>
+        <p></p>
+        <button id = "v1">a</button>
+        <button> + </button>
+        <button id = "v2">b</button>
+        <button> = </button>
+        <input id = "v3">
+        <p></p>
+        <button id = "v4">a</button>
+        <button> + </button>
+        <button id = "v5">b</button>
+        <button> = </button>
+        <input id = "v6">
+        <p></p>
+        <button onclick=patikrinimas()>Tikrinti</button>
+        <script>
+        function skaicius()
+        {
+             var x1 = Math.floor(Math.random() * 100) + 1;
+             var y1 = Math.floor(Math.random() * 100) + 1;
+             var x2 = Math.floor(Math.random() * 100) + 1;
+             var y2 = Math.floor(Math.random() * 100) + 1;
+             document.getElementById("v1").innerHTML = x1;
+             document.getElementById("v2").innerHTML = y1;
+             document.getElementById("v4").innerHTML = x2;
+             document.getElementById("v5").innerHTML = y2;
+             document.getElementById("v3").value = null;
+             document.getElementById("v6").value = null;
+        }
+        function patikrinimas()
+        {
+            var x1 = Number(document.getElementById("v1").innerHTML);
+            var y1 = Number(document.getElementById("v2").innerHTML);
+            var z1 = document.getElementById("v3").value;
+            var x2 = Number(document.getElementById("v4").innerHTML);
+            var y2 = Number(document.getElementById("v5").innerHTML);
+            var z2 = document.getElementById("v6").value;
+            if (z1 == x1 + y1 && z2 == x2 + y2)
+            alert("Teisingai");
+            else alert ("Neteisingai");
+        }
+        </script>
+    </body>
+</html>
